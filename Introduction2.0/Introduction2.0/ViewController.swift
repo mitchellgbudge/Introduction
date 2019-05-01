@@ -14,7 +14,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
+    @IBAction func introduceMeButton(_ sender: Any) {
+        let name = "Mitchell Budge"
+        let hometown = "Mapleton, Utah"
+        var favoriteColor = "black"
+        var favoriteFood = "ramen"
+        
+        
+        introductionTextView.text = "My name is \(name) and I am from \(hometown). My favorite color is \(favoriteColor) and my favorite food is \(favoriteFood)."
+    }
+    @IBOutlet weak var introductionTextView: UITextView!
+    
 
 }
 
